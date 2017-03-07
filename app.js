@@ -1,12 +1,6 @@
 (function func() {
-    var str1 = prompt("first word", "просветитель");
-    var str2 = prompt("second word", "терпеливость");
-
-    str1 = str1.toUpperCase().trim();
-    str2 = str2.toUpperCase().trim();
-
-    var len1 = str1.length;
-    var len2 = str2.length;
+    var str1 = prompt("first word", '').toUpperCase().trim();
+    var str2 = prompt("second word", '').toUpperCase().trim();
 
     if( str1 != str2) {
        
@@ -22,3 +16,13 @@
     alert("not anagram");
     return;
 }());
+
+// (function func() {
+//     var str1 = prompt("first word", '').toUpperCase().replace(/\s+/g, '').split('').sort().join('');;
+//     var str2 = prompt("second word", '').toUpperCase().replace(/\s+/g, '').split('').sort().join('');;
+//     if(str1 == str2) {
+//         alert("anagram");
+//     } else {
+//         alert("not anagram");
+//     }
+// }());
